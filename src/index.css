@@ -1,0 +1,71 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Comic+Relief:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* TriP Design System */
+
+@layer base {
+  :root {
+    --background: 14 14 14;
+    --foreground: 255 255 255;
+
+    --card: 43 43 43;
+    --card-foreground: 255 255 255;
+
+    --popover: 43 43 43;
+    --popover-foreground: 255 255 255;
+
+    --primary: 51 139 226;
+    --primary-foreground: 255 255 255;
+
+    --secondary: 75 85 99;
+    --secondary-foreground: 255 255 255;
+
+    --muted: 107 114 128;
+    --muted-foreground: 156 163 175;
+
+    --accent: 75 85 99;
+    --accent-foreground: 255 255 255;
+
+    --destructive: 239 68 68;
+    --destructive-foreground: 255 255 255;
+
+    --border: 107 114 128;
+    --input: 43 43 43;
+    --ring: 51 139 226;
+
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Alumni Sans', sans-serif;
+  }
+}
+
+@layer components {
+  .trip-gradient {
+    background: linear-gradient(135deg, #338BE2 0%, #4B5563 100%);
+  }
+  
+  .trip-card {
+    @apply bg-card/75 backdrop-blur-sm border border-gray-500/20 shadow-xl rounded-2xl;
+  }
+  
+  .trip-button {
+    @apply bg-gradient-to-r from-primary to-gray-600 hover:from-primary/90 hover:to-gray-600/90 text-white font-medium px-6 py-3 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl;
+  }
+
+  .trip-button-outline {
+    @apply bg-card/75 border border-gray-500/30 text-white hover:bg-card/90 font-medium px-6 py-3 rounded-xl transition-all duration-200;
+  }
+}
