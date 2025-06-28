@@ -1,5 +1,7 @@
 
-# TriP - Travel Planning Platform
+# TriP - Travel Itinerary Planner
+
+URL : https://travel-itinerary-planner-sable.vercel.app/
 
 A modern web application for planning and organizing your travel adventures. Create custom trips, explore destinations, and manage your itineraries all in one place.
 
